@@ -30,11 +30,6 @@ function Header() {
           <span className="navicon"></span>
         </label>
         <ul className="menu">
-          {viewSkills && (
-            <li>
-              <a href="#skills">About Me</a>
-            </li>
-          )}
           {viewExperience && (
             <li>
               <a href="#experience">Work Experience</a>
@@ -45,9 +40,6 @@ function Header() {
           </li>
           <li>
             <a href="#travel">Travel</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
           </li>
           {viewAchievement && (
             <li>

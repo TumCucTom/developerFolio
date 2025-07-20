@@ -31,7 +31,11 @@ const Gallery = ({ images }) => {
             src={images[currentIndex].src} 
             alt={images[currentIndex].alt}
             className="gallery-image"
-            loading="lazy"
+            loading="eager"
+            onError={(e) => {
+              console.error('Image failed to load:', images[currentIndex].src);
+              e.target.style.display = 'none';
+            }}
           />
         </div>
         
