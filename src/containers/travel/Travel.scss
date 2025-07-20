@@ -38,11 +38,13 @@
   flex: 1;
   height: auto;
   border-radius: 15px;
-  overflow: visible;
+  overflow: hidden;
+  max-width: 100%;
   
   .main-travel-photo {
     width: 100%;
     height: auto;
+    max-width: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
     
@@ -135,11 +137,14 @@
     padding: 10px;
     flex-direction: column;
     gap: 20px;
+    max-width: 100%;
   }
   
   .main-photo-container {
     height: 400px;
     order: 1;
+    max-width: 100%;
+    width: 100%;
   }
   
   .side-photos {
@@ -170,6 +175,8 @@
   
   .main-photo-container {
     height: 300px;
+    max-width: 100%;
+    width: 100%;
   }
   
   .side-photos {

@@ -175,16 +175,6 @@ export default function socialMedia() {
           <span className="icon-label">Linktree</span>
         </a>
       ) : null}
-
-      <a
-        href="#contact"
-        className="icon-button contact"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fas fa-envelope"></i>
-        <span className="icon-label">Contact</span>
-      </a>
     </div>
   );
 }

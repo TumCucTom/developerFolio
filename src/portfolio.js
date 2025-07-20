@@ -33,9 +33,8 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/hollywilson",
   linkedin: "https://www.linkedin.com/in/hollywilson/",
-  gmail: "holly.wilson@email.com",
+  gmail: "happyhealthyhols@gmail.com",
   instagram: "https://www.instagram.com/happyhealthyhols?igsh=MWx3OWhrZ2ViNnJ2&utm_source=qr",
   tiktok: "https://www.tiktok.com/@hwilsonnnnnn?_t=ZN-8y3U0EM7w3C&_r=1",
   youtube: "https://youtube.com/@happyhealthyhols?si=jIEjPRAodotGRrmc",
@@ -388,7 +387,7 @@ const contactInfo = {
   title: "Contact Me",
   subtitle: "happyhealthyhols@gmail.com",
   number: "+1-555-0123",
-  email_address: "holly.wilson@email.com"
+  email_address: "happyhealthyhols@gmail.com"
 };
 
 // Twitter Section

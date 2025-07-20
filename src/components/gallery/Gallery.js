@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Gallery.scss';
-import SocialMedia from '../socialMedia/SocialMedia';
+import GalleryCTAs from '../galleryCTAs/GalleryCTAs';
 
 const Gallery = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,7 +46,7 @@ const Gallery = ({ images }) => {
       
 
       <div className="gallery-ctas">
-        <SocialMedia />
+        <GalleryCTAs />
       </div>
     </div>
   );
