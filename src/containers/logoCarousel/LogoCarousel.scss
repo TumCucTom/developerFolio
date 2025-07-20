@@ -1,0 +1,132 @@
+@import "../../_globalColor";
+
+.carousel-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px 0;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.carousel-track-forward {
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track-reverse {
+  animation: scroll-reverse 30s linear infinite;
+  margin-top: 80px;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+.brand-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: $subTitle;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $titleColor;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Pause animation on hover */
+.carousel-container:hover .carousel-track-forward,
+.carousel-container:hover .carousel-track-reverse {
+  animation-play-state: paused;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  .carousel-container {
+    background: rgba(255, 255, 255, 0.01);
+    border-top-color: rgba(255, 255, 255, 0.03);
+    border-bottom-color: rgba(255, 255, 255, 0.03);
+  }
+  
+  .brand-text {
+    color: $subTitle;
+    
+    &:hover {
+      color: $titleColor;
+    }
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 30px 0;
+  }
+  
+  .carousel-item {
+    padding: 0 25px;
+    min-width: 150px;
+  }
+  
+  .brand-text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  
+  .carousel-track {
+    animation-duration: 20s;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 25px 0;
+  }
+  
+  .carousel-item {
+    padding: 0 20px;
+    min-width: 120px;
+  }
+  
+  .brand-text {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+  
+  .carousel-track {
+    animation-duration: 15s;
+  }
+} 

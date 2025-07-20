@@ -1,11 +1,9 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import InstagramFollower from "../../components/instagramFollower/InstagramFollower";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -17,14 +15,16 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
+            <div className="about-me-left-content">
+              <div className="personal-image-container">
+                <img
+                  alt="Holly Wilson"
+                  src={require("../../assets/images/personal-images/18.jpeg")}
+                  className="personal-image"
+                />
+              </div>
+              <InstagramFollower />
+            </div>
           </div>
         </Fade>
         <Fade right duration={1000}>
@@ -43,9 +43,8 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skills, i) => {
+            <div className="about-description">
+              {skillsSection.description.map((paragraph, i) => {
                 return (
                   <p
                     key={i}
@@ -55,7 +54,7 @@ export default function Skills() {
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
+                    {paragraph}
                   </p>
                 );
               })}

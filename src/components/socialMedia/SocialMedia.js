@@ -16,7 +16,7 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-github"></i>
-          <span></span>
+          <span className="icon-label">GitHub</span>
         </a>
       ) : null}
 
@@ -28,7 +28,7 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-linkedin-in"></i>
-          <span></span>
+          <span className="icon-label">LinkedIn</span>
         </a>
       ) : null}
 
@@ -40,7 +40,7 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fas fa-envelope"></i>
-          <span></span>
+          <span className="icon-label">Email</span>
         </a>
       ) : null}
 
@@ -76,7 +76,7 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-instagram"></i>
-          <span></span>
+          <span className="icon-label">Instagram</span>
         </a>
       ) : null}
 
@@ -127,6 +127,64 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.tiktok ? (
+        <a
+          href={socialMediaLinks.tiktok}
+          className="icon-button tiktok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-tiktok"></i>
+          <span className="icon-label">TikTok</span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.youtube ? (
+        <a
+          href={socialMediaLinks.youtube}
+          className="icon-button youtube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-youtube"></i>
+          <span className="icon-label">YouTube</span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.strava ? (
+        <a
+          href={socialMediaLinks.strava}
+          className="icon-button strava"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-running"></i>
+          <span className="icon-label">Strava</span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.linktree ? (
+        <a
+          href={socialMediaLinks.linktree}
+          className="icon-button linktree"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fas fa-link"></i>
+          <span className="icon-label">Linktree</span>
+        </a>
+      ) : null}
+
+      <a
+        href="#contact"
+        className="icon-button contact"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fas fa-envelope"></i>
+        <span className="icon-label">Contact</span>
+      </a>
     </div>
   );
 }

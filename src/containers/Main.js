@@ -2,15 +2,17 @@ import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
+import Gap from "./gap/Gap";
+import LogoCarousel from "./logoCarousel/LogoCarousel";
+import BrandDeals from "./brandDeals/BrandDeals";
+import GroupTrips from "./groupTrips/GroupTrips";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
+import Travel from "./travel/Travel";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
-import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
-import Talks from "./talks/Talks";
-import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
@@ -56,13 +58,15 @@ const Main = () => {
             <StackProgress />
             <Education />
             <WorkExperience />
+            <Travel />
             <Projects />
             <StartupProject />
+            <Gap />
+            <LogoCarousel />
             <Achievement />
-            <Blogs />
-            <Talks />
+            <BrandDeals />
+            <GroupTrips />
             <Twitter />
-            <Podcast />
             <Profile />
             <Footer />
             <ScrollToTopButton />

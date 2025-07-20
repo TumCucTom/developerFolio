@@ -33,20 +33,12 @@ export default function Achievement() {
               {achievementSection.subtitle}
             </p>
           </div>
-          <div className="achievement-cards-div">
+          <div className="achievement-bullets-div">
             {achievementSection.achievementsCards.map((card, i) => {
               return (
-                <AchievementCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    image: card.image,
-                    imageAlt: card.imageAlt,
-                    footer: card.footerLink
-                  }}
-                />
+                <div key={i} className="achievement-bullet">
+                  <span className="bullet-text">{card.title}</span>
+                </div>
               );
             })}
           </div>

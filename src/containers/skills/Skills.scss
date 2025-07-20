@@ -4,28 +4,84 @@
   display: flex;
   width: 100%;
   overflow: hidden;
+  gap: 40px;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 40px 0 60px 0;
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.skills-main-div > * {
+.skills-image-div {
   flex: 1;
-  margin-bottom: 30px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 30px;
 
-.skills-image-div > img {
-  max-width: 100%;
-  height: auto;
+  .about-me-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .personal-image-container {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 6px solid $buttonColor;
+    
+    .personal-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover .personal-image {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
 }
+
 .subTitle {
   color: $subTitle;
+}
+
+.about-description {
+  margin-top: 20px;
+  width: 100%;
+  
+  .skills-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 /* Media Query */
@@ -34,31 +90,55 @@
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
     text-align: center;
   }
+  
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
   }
+  
   .skills-main-div {
     flex-direction: column;
+    min-height: auto;
   }
+  
   .skills-text-div {
     margin-left: 0px;
     margin: 20px;
+    max-width: 100%;
   }
+  
   .skills-text {
     font-size: 16px;
   }
+  
   .skills-text-subtitle {
     font-size: 16px;
     text-align: center;
   }
+  
+  .about-description .skills-text {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
   .skills-image-div {
-    /* display: none; */
     order: 2;
+    flex: 1;
+    
+    .about-me-left-content {
+      gap: 20px;
+    }
+    
+    .personal-image-container {
+      width: 200px;
+      height: 200px;
+    }
   }
 }

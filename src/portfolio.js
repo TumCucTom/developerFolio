@@ -16,30 +16,35 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static image
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Holly Wilson",
+  title: "Hi, my name is Holly Wilson",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I'm a Dental student, currently intercalating in BSc Functional and Clinical Anatomy. However, I have a passion to pursue multiple dreams simultaneously; alongside excelling in dental school, I have also trained for Ironman triathlons & marathons, travelled over 30 countries independently, and have successfully begun my own business- 'HappyHealthyHols' 🚀"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/hollywilson",
+  linkedin: "https://www.linkedin.com/in/hollywilson/",
+  gmail: "holly.wilson@email.com",
+  instagram: "https://www.instagram.com/happyhealthyhols?igsh=MWx3OWhrZ2ViNnJ2&utm_source=qr",
+  tiktok: "https://www.tiktok.com/@hwilsonnnnnn?_t=ZN-8y3U0EM7w3C&_r=1",
+  youtube: "https://youtube.com/@happyhealthyhols?si=jIEjPRAodotGRrmc",
+  strava: "https://strava.app.link/H1McqByW1Ub",
+  linktree: "https://linktr.ee/Hollyfitness02?fbclid=PAQ0xDSwLjgNMBpgPxneFHqCpMddNy47OYO0gDfF8TqvXfyXv65I3SFZtcAln9b_hT6kym9A_aem_AU47-Z5in9dnfEpap2FMK_Ane2zhNahzI9BasRw9QV06WwM86mNJmirS9i0LfXPmsI8",
+  // gitlab: "https://gitlab.com/hollywilson",
+  // facebook: "https://www.facebook.com/holly.wilson",
+  // medium: "https://medium.com/@hollywilson",
+  // stackoverflow: "https://stackoverflow.com/users/hollywilson",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,16 +53,11 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+  title: "About Me",
+  subTitle: "DENTAL STUDENT, ATHLETE, TRAVELER & ENTREPRENEUR",
+  description: [
+    "Hi, my name is Holly Wilson, and I'm a Dental student, currently intercalating in BSc Functional and Clinical Anatomy. However, I have a passion to pursue multiple dreams simultaneously; alongside excelling in dental school (achieving the highest achiever in Health Sciences in Year 1, and an average of 80.5% in my end of year exams to date), I have also trained for Ironman triathlons & marathons, travelled over 30 countries independently, and have successfully begun my own business- 'HappyHealthyHols' both working with huge brands on social media in marketing, such as Adidas and Speedo, and also hosting group trips for up to 32 individuals, bringing together likeminded people through the experience of exploring new countries/trying a new challenge.",
+    "With a combined following of over 110,000, my social media pages aim to bring smiles (in a different way to dentistry!) to a global audience of millions monthly, across Instagram, TikTok, and YouTube, inspiring others who are also in full time education/ employment to maximise their free time and annual leave- working to LIVE rather than living to work. I also use the platforms to raise money for charities when I compete in sporting events, and to educate others on the risks of oral health deterioration in endurance sports- a topic I would love to investigate further in the future."
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -126,23 +126,43 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Bristol",
+      logo: require("./assets/images/uob_new_logo.png"),
+      subHeader: "BDS Dentistry",
+      duration: "Current",
+      desc: "Currently studying BDS Dentistry at the University of Bristol.",
+      descBullets: []
+    },
+    {
+      schoolName: "University of Bristol",
+      logo: require("./assets/images/uob_new_logo.png"),
+      subHeader: "BSc Dentistry",
+      duration: "Current",
+      desc: "Currently studying BSc Dentistry at the University of Bristol.",
+      descBullets: []
+    },
+    {
+      schoolName: "International Baccalaureate",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "IB Diploma - 45 points",
+      duration: "Completed",
+      desc: "Achieved 45 points in the International Baccalaureate, equivalent to 5 A* at A level.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Higher Level: Biology, Chemistry, Psychology",
+        "Standard Level: English, Mathematics, French"
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "GCSE",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      subHeader: "GCSE Qualifications",
+      duration: "Completed",
+      desc: "Outstanding GCSE results demonstrating academic excellence.",
+      descBullets: [
+        "6 x Grade 9's (A**)",
+        "4 x Grade 8's (A*)",
+        "A* in Further Mathematics"
+      ]
     }
   ]
 };
@@ -150,7 +170,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -174,29 +194,30 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Dental Student",
+      company: "St George's Hospital, London",
+      companylogo: require("./assets/images/harvardLogo.png"),
+      date: "Current",
+      desc: "Working in the Maxillofacial and Orthodontic department, gaining hands-on experience in specialized dental care and treatment.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Assisting with maxillofacial procedures",
+        "Learning orthodontic treatment techniques",
+        "Observing complex dental surgeries",
+        "Working with specialized dental equipment"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Dental Assistant",
+      company: "The Sandford Dental Clinic",
+      companylogo: require("./assets/images/stanfordLogo.png"),
+      date: "Current",
+      desc: "Providing support in a private dental practice, gaining practical experience in patient care and dental procedures.",
+      descBullets: [
+        "Assisting dentists with patient procedures",
+        "Managing patient records and appointments",
+        "Sterilizing dental instruments",
+        "Providing patient care and support"
+      ]
     }
   ]
 };
@@ -209,95 +230,90 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
+// Volunteering and Fundraising Section
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Volunteering & Fundraising",
+  subtitle: "MAKING A DIFFERENCE THROUGH SERVICE AND CHARITY",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      image: require("./assets/images/harvardLogo.png"),
+      projectName: "Peru - School Volunteering",
+      projectDesc: "One week in a school, using basic Spanish to educate the children on oral hygiene, and fundraising money to provide them all with toothbrushes and toothpaste.",
+      footerLink: []
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      image: require("./assets/images/stanfordLogo.png"),
+      projectName: "Tanzania - One Month Placement",
+      projectDesc: "One month volunteering placement, completing oral health promotion in a daycare centre, and fundraising over £500 to install soft flooring in the playground, repainting the building and a mural with the children's handprints, and providing each child with a named pencil case with school supplies as well as a toothbrush and small toothpaste. I also attended medical outreach, ensuring I remained within my scope of practice and current training, but providing oral health advice to those in the most rural populations.",
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/im_logo.jpg"),
+      projectName: "Ironman 70.3 - Charity Fundraising",
+      projectDesc: "I raised over £1000 for Prostate Cancer UK and Crohns and Colitis UK - charities whose research and support has been key in my parents' health.",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Personal Brand Section
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: "PERSONAL BRAND",
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "I have always been active, growing up swimming, playing tennis, hockey, and trying everything from taekwondo to horse riding. Whilst travelling I found my love for running as a method of exploring new cities, and cycling (bike packing) as a great way to see countries at a slower pace (and much cheaper!) rate. I have documented my whole journey from weight gain following an eating disorder, to where I am today! Some of the crazy cool challenges I've documented are:",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      title: "• Over 15 half marathons",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      title: "• 2 x 70.3 Ironman triathlons",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "• Paris Marathon 2025",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
+    },
+    {
+      title: "• 375km bikepacking trip in Slovenia",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
+    },
+    {
+      title: "• 550km bike packing trip in France",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
+    },
+    {
+      title: "• 5 day Salkantay trek in Peru",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
+    },
+    {
+      title: "• 3 day Mount Rinjani trek in Lombok, Indonesia",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -372,8 +388,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1-555-0123",
+  email_address: "holly.wilson@email.com"
 };
 
 // Twitter Section

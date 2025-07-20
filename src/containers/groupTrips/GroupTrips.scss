@@ -1,0 +1,177 @@
+@import "../../_globalColor";
+
+.group-trips-main-div {
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.group-trips-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+
+.group-trips-description {
+  text-transform: none;
+  margin: 0px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;
+  color: $subTitle;
+}
+
+/* Previous Trips Section */
+.previous-trips-section {
+  margin-top: 80px;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: $subTitle;
+}
+
+.country-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.country-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px 25px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.country-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: $titleColor;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.trip-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trip-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trip-year {
+  font-size: 14px;
+  font-weight: 600;
+  color: $titleColor;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.trip-location {
+  font-size: 16px;
+  font-weight: 500;
+  color: $subTitle;
+}
+
+.trip-activities {
+  font-size: 14px;
+  color: $subTitle;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  .group-trips-description {
+    color: $subTitle;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .group-trips-heading {
+    font-size: 40px;
+  }
+  
+  .group-trips-description {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 600px;
+  }
+  
+  .section-subtitle {
+    font-size: 20px;
+  }
+  
+  .country-boxes {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .country-box {
+    padding: 25px 20px;
+  }
+  
+  .country-name {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .group-trips-heading {
+    font-size: 32px;
+  }
+  
+  .group-trips-description {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 400px;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+  }
+  
+  .country-box {
+    padding: 20px 15px;
+  }
+  
+  .country-name {
+    font-size: 20px;
+  }
+  
+  .trip-location {
+    font-size: 15px;
+  }
+  
+  .trip-activities {
+    font-size: 13px;
+  }
+} 

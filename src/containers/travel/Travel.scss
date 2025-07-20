@@ -1,0 +1,183 @@
+@import "../../_globalColor";
+
+.travel-main-div {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.travel-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.travel-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.travel-subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  color: $subTitle;
+}
+
+.travel-gallery {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-photo-container {
+  position: relative;
+  flex: 1;
+  height: auto;
+  border-radius: 15px;
+  overflow: visible;
+  
+  .main-travel-photo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.side-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+
+.left-photos {
+  order: 1;
+}
+
+.right-photos {
+  order: 3;
+}
+
+.small-photo-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  .small-travel-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Dark mode styles */
+.dark-mode {
+  .travel-heading {
+    color: $textColorDark;
+  }
+  
+  .travel-subtitle {
+    color: $subTitle;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .travel-gallery {
+    max-width: 1000px;
+    gap: 20px;
+  }
+  
+  .main-photo-container {
+    height: 500px;
+  }
+  
+  .side-photos {
+    width: 150px;
+  }
+  
+  .small-photo-container {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .travel-heading {
+    font-size: 40px;
+  }
+  
+  .travel-subtitle {
+    font-size: 18px;
+  }
+  
+  .travel-gallery {
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-photo-container {
+    height: 400px;
+    order: 1;
+  }
+  
+  .side-photos {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .left-photos {
+    order: 2;
+  }
+  
+  .right-photos {
+    order: 3;
+  }
+  
+  .small-photo-container {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel-heading {
+    font-size: 32px;
+  }
+  
+  .main-photo-container {
+    height: 300px;
+  }
+  
+  .side-photos {
+    gap: 10px;
+  }
+  
+  .small-photo-container {
+    width: 80px;
+    height: 80px;
+  }
+} 
