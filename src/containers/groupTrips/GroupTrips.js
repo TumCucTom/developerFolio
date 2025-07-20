@@ -44,9 +44,40 @@ export default function GroupTrips() {
                 Previous Trips
               </h2>
               
+              <div className="country-maps">
+                <div className="country-map-container">
+                  <img
+                    src={require("../../assets/images/maps/costa_rica.png")}
+                    alt="Costa Rica map"
+                    className="country-map-image"
+                    loading="lazy"
+                  />
+                  <h3 className="map-country-name">Costa Rica</h3>
+                </div>
+                
+                <div className="country-map-container">
+                  <img
+                    src={require("../../assets/images/maps/portugal.png")}
+                    alt="Portugal map"
+                    className="country-map-image"
+                    loading="lazy"
+                  />
+                  <h3 className="map-country-name">Portugal</h3>
+                </div>
+                
+                <div className="country-map-container">
+                  <img
+                    src={require("../../assets/images/maps/uk.png")}
+                    alt="United Kingdom map"
+                    className="country-map-image"
+                    loading="lazy"
+                  />
+                  <h3 className="map-country-name">United Kingdom</h3>
+                </div>
+              </div>
+              
               <div className="country-boxes">
                 <div className="country-box">
-                  <h3 className="country-name">Costa Rica</h3>
                   <div className="trip-details">
                     <div className="trip-item">
                       <span className="trip-year">2023</span>
@@ -57,7 +88,6 @@ export default function GroupTrips() {
                 </div>
                 
                 <div className="country-box">
-                  <h3 className="country-name">Portugal</h3>
                   <div className="trip-details">
                     <div className="trip-item">
                       <span className="trip-year">2024</span>
@@ -78,7 +108,6 @@ export default function GroupTrips() {
                 </div>
                 
                 <div className="country-box">
-                  <h3 className="country-name">United Kingdom</h3>
                   <div className="trip-details">
                     <div className="trip-item">
                       <span className="trip-year">2024</span>

@@ -1,25 +1,15 @@
 {
-  "short_name": "DeveloperFolio",
-  "name": "DeveloperFolio",
+  "short_name": "Holly Wilson",
+  "name": "Holly Wilson - Portfolio",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "/android-chrome-192x192.png?v8=qAJ44G5Bm7",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/android-chrome-384x384.png?v8=qAJ44G5Bm7",
-      "type": "image/png",
-      "sizes": "384x384"
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍋</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#6c63ff",
-  "background_color": "#ffffff"
+  "theme_color": "#fef9e7",
+  "background_color": "#fef9e7"
 }

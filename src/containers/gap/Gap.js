@@ -15,6 +15,7 @@ export default function Gap() {
               src={require("../../assets/images/personal-images/6.jpeg")}
               alt="Holly Wilson"
               className="gap-image"
+              loading="lazy"
             />
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Gallery.scss';
 import SocialMedia from '../socialMedia/SocialMedia';
-import Button from '../button/Button';
 
 const Gallery = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,9 +17,7 @@ const Gallery = ({ images }) => {
     );
   };
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
+
 
   return (
     <div className="gallery-container">
@@ -34,6 +31,7 @@ const Gallery = ({ images }) => {
             src={images[currentIndex].src} 
             alt={images[currentIndex].alt}
             className="gallery-image"
+            loading="lazy"
           />
         </div>
         

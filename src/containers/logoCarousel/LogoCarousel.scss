@@ -1,8 +1,7 @@
 @import "../../_globalColor";
 
 .carousel-container {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.02);
   border-top: 1px solid rgba(255, 255, 255, 0.05);

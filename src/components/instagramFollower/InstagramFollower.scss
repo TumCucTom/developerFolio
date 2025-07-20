@@ -78,19 +78,50 @@
 
 // Responsive design
 @media (max-width: 768px) {
-  .instagram-follower .instagram-link {
-    padding: 20px;
+  .instagram-follower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     
-    .instagram-icon i {
-      font-size: 2.5rem;
+    .instagram-link {
+      padding: 20px;
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+      
+      .instagram-icon i {
+        font-size: 2.5rem;
+      }
+      
+      .follower-info .follower-count .count {
+        font-size: 2rem;
+      }
+      
+      .follower-info .follower-label {
+        font-size: 1rem;
+      }
     }
-    
-    .follower-info .follower-count .count {
-      font-size: 2rem;
-    }
-    
-    .follower-info .follower-label {
-      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .instagram-follower {
+    .instagram-link {
+      padding: 15px;
+      max-width: 280px;
+      
+      .instagram-icon i {
+        font-size: 2rem;
+      }
+      
+      .follower-info .follower-count .count {
+        font-size: 1.8rem;
+      }
+      
+      .follower-info .follower-label {
+        font-size: 0.9rem;
+      }
     }
   }
 } 

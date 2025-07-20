@@ -17,7 +17,7 @@ export default function Skills() {
           <div className="skills-image-div">
             <div className="about-me-left-content">
               <div className="personal-image-container">
-                <img
+              <img
                   alt="Holly Wilson"
                   src={require("../../assets/images/personal-images/18.jpeg")}
                   className="personal-image"
