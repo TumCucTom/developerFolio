@@ -36,21 +36,21 @@ export default function Travel() {
             <div className="side-photos left-photos">
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/1.jpeg")}
+                  src={require("../../assets/images/personal-images/1.webp")}
                   alt="Travel 1"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/2.jpeg")}
+                  src={require("../../assets/images/personal-images/2.webp")}
                   alt="Travel 2"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/3.jpeg")}
+                  src={require("../../assets/images/personal-images/3.webp")}
                   alt="Travel 3"
                   className="small-travel-photo"
                 />
@@ -70,21 +70,21 @@ export default function Travel() {
             <div className="side-photos right-photos">
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/7.jpeg")}
+                  src={require("../../assets/images/personal-images/7.webp")}
                   alt="Travel 7"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/8.jpeg")}
+                  src={require("../../assets/images/personal-images/8.webp")}
                   alt="Travel 8"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/9.jpeg")}
+                  src={require("../../assets/images/personal-images/9.webp")}
                   alt="Travel 9"
                   className="small-travel-photo"
                 />

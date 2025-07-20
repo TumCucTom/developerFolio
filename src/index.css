@@ -27,6 +27,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fef9e7;
 }
+
+/* Hide scrollbar on mobile devices */
+@media (max-width: 768px) {
+  html {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  html::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+  body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+}
 /* Media Query */
 @media (max-width: 1380px) {
   html,

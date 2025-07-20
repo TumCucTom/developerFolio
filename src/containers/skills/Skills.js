@@ -19,7 +19,7 @@ export default function Skills() {
               <div className="personal-image-container">
               <img
                   alt="Holly Wilson"
-                  src={require("../../assets/images/personal-images/18.jpeg")}
+                  src={require("../../assets/images/personal-images/18.webp")}
                   className="personal-image"
                 />
               </div>

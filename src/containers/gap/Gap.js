@@ -12,7 +12,7 @@ export default function Gap() {
         <div className="gap-main-div">
           <div className="gap-image-container">
             <img
-              src={require("../../assets/images/personal-images/6.jpeg")}
+              src={require("../../assets/images/personal-images/6.webp")}
               alt="Holly Wilson"
               className="gap-image"
               loading="lazy"
