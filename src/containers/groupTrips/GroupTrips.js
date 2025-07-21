@@ -85,6 +85,14 @@ export default function GroupTrips() {
                       <span className="trip-activities">Canyoneering, kayaking, volcano hikes, organic farms and adventuring</span>
                     </div>
                   </div>
+                  <div className="trip-image-container">
+                    <img
+                      src={require("../../assets/images/personal-images/4.webp")}
+                      alt="Costa Rica Trip"
+                      className="trip-image"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
                 
                 <div className="country-box">

@@ -1,8 +1,37 @@
 @import "../../_globalColor";
 
+.achievement-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.achievement-side-image {
+  display: none; // Hidden by default (mobile)
+  flex-shrink: 0;
+  
+  .achievement-image {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
 .achievement-main-div {
   width: 100%;
   text-align: center;
+  flex: 1;
 }
 
 .achievement-heading {
@@ -62,11 +91,36 @@
 }
 
 /* Media Query */
+
+/* Desktop only - show side images */
+@media (min-width: 1024px) {
+  .achievement-side-image {
+    display: block;
+  }
+}
+
 @media (max-width: 1380px) {
   .achievement-heading {
     font-size: 40px;
   }
+  
+  .achievement-side-image .achievement-image {
+    width: 200px;
+    height: 280px;
+  }
 }
+
+@media (max-width: 1024px) {
+  .achievement-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .achievement-side-image {
+    display: none; // Hide images on tablet and mobile
+  }
+}
+
 @media (max-width: 768px) {
   .achievement-heading {
     font-size: 30px;

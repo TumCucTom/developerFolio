@@ -15,95 +15,89 @@ export default function GalleryCTAs() {
   return (
     <div className="gallery-ctas-container">
       <div className="gallery-ctas-grid">
-        {/* Top Row - 4 icons */}
-        <div className="gallery-ctas-row top-row">
-          {galleryLinks.linkedin && (
-            <a
-              href={galleryLinks.linkedin}
-              className="gallery-cta-button linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in"></i>
-              <span className="gallery-cta-label">LinkedIn</span>
-            </a>
-          )}
+        {galleryLinks.linkedin && (
+          <a
+            href={galleryLinks.linkedin}
+            className="gallery-cta-button linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin-in"></i>
+            <span className="gallery-cta-label">LinkedIn</span>
+          </a>
+        )}
 
-          {galleryLinks.gmail && (
-            <a
-              href={`mailto:${galleryLinks.gmail}`}
-              className="gallery-cta-button email"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-envelope"></i>
-              <span className="gallery-cta-label">Email</span>
-            </a>
-          )}
+        {galleryLinks.gmail && (
+          <a
+            href={`mailto:${galleryLinks.gmail}`}
+            className="gallery-cta-button email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-envelope"></i>
+            <span className="gallery-cta-label">Email</span>
+          </a>
+        )}
 
-          {galleryLinks.instagram && (
-            <a
-              href={galleryLinks.instagram}
-              className="gallery-cta-button instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-              <span className="gallery-cta-label">Instagram</span>
-            </a>
-          )}
+        {galleryLinks.instagram && (
+          <a
+            href={galleryLinks.instagram}
+            className="gallery-cta-button instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-instagram"></i>
+            <span className="gallery-cta-label">Instagram</span>
+          </a>
+        )}
 
-          {galleryLinks.tiktok && (
-            <a
-              href={galleryLinks.tiktok}
-              className="gallery-cta-button tiktok"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-tiktok"></i>
-              <span className="gallery-cta-label">TikTok</span>
-            </a>
-          )}
-        </div>
+        {galleryLinks.tiktok && (
+          <a
+            href={galleryLinks.tiktok}
+            className="gallery-cta-button tiktok"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-tiktok"></i>
+            <span className="gallery-cta-label">TikTok</span>
+          </a>
+        )}
 
-        {/* Bottom Row - 3 icons */}
-        <div className="gallery-ctas-row bottom-row">
-          {galleryLinks.youtube && (
-            <a
-              href={galleryLinks.youtube}
-              className="gallery-cta-button youtube"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-youtube"></i>
-              <span className="gallery-cta-label">YouTube</span>
-            </a>
-          )}
+        {galleryLinks.youtube && (
+          <a
+            href={galleryLinks.youtube}
+            className="gallery-cta-button youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-youtube"></i>
+            <span className="gallery-cta-label">YouTube</span>
+          </a>
+        )}
 
-          {galleryLinks.strava && (
-            <a
-              href={galleryLinks.strava}
-              className="gallery-cta-button strava"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-running"></i>
-              <span className="gallery-cta-label">Strava</span>
-            </a>
-          )}
+        {galleryLinks.strava && (
+          <a
+            href={galleryLinks.strava}
+            className="gallery-cta-button strava"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-running"></i>
+            <span className="gallery-cta-label">Strava</span>
+          </a>
+        )}
 
-          {galleryLinks.linktree && (
-            <a
-              href={galleryLinks.linktree}
-              className="gallery-cta-button linktree"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-link"></i>
-              <span className="gallery-cta-label">Linktree</span>
-            </a>
-          )}
-        </div>
+        {galleryLinks.linktree && (
+          <a
+            href={galleryLinks.linktree}
+            className="gallery-cta-button linktree"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-link"></i>
+            <span className="gallery-cta-label">Linktree</span>
+          </a>
+        )}
       </div>
     </div>
   );

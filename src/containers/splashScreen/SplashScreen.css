@@ -21,3 +21,95 @@
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
 }
+
+/* Dental Animation */
+.dental-animation {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.tooth-svg {
+  width: 120px;
+  height: 144px;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.tooth-path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawTooth 2s ease-in-out infinite;
+}
+
+.tooth-root-path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: drawTooth 2s ease-in-out infinite 0.5s;
+}
+
+.tooth-details {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: drawTooth 2s ease-in-out infinite 1s;
+}
+
+.sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.sparkle-1 {
+  animation-delay: 0s;
+}
+
+.sparkle-2 {
+  animation-delay: 0.5s;
+}
+
+.sparkle-3 {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes drawTooth {
+  0% {
+    stroke-dashoffset: 300;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}

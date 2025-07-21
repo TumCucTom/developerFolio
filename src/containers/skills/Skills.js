@@ -1,9 +1,7 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import {skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import InstagramFollower from "../../components/instagramFollower/InstagramFollower";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -13,21 +11,23 @@ export default function Skills() {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
           <div className="skills-image-div">
             <div className="about-me-left-content">
               <div className="personal-image-container">
               <img
                   alt="Holly Wilson"
-                  src={require("../../assets/images/personal-images/18.webp")}
+                  src={require("../../assets/images/personal-images/20.webp")}
                   className="personal-image"
                 />
               </div>
-              <InstagramFollower />
+              <div className="follower-count">
+                <div className="follower-text">
+                  <div className="count">100k+</div>
+                  <div className="label">Following</div>
+                </div>
+              </div>
             </div>
           </div>
-        </Fade>
-        <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
@@ -60,7 +60,6 @@ export default function Skills() {
               })}
             </div>
           </div>
-        </Fade>
       </div>
     </div>
   );

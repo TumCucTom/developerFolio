@@ -146,21 +146,15 @@ const educationInfo = {
       subHeader: "IB Diploma - 45 points",
       duration: "Completed",
       desc: "Achieved 45 points in the International Baccalaureate, equivalent to 5 A* at A level.",
-      descBullets: [
-        "Higher Level: Biology, Chemistry, Psychology",
-        "Standard Level: English, Mathematics, French"
-      ]
     },
     {
       schoolName: "GCSE",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "GCSE Qualifications",
       duration: "Completed",
-      desc: "Outstanding GCSE results demonstrating academic excellence.",
       descBullets: [
         "6 x Grade 9's (A**)",
         "4 x Grade 8's (A*)",
-        "A* in Further Mathematics"
       ]
     }
   ]
@@ -236,19 +230,19 @@ const bigProjects = {
   subtitle: "MAKING A DIFFERENCE THROUGH SERVICE AND CHARITY",
   projects: [
     {
-      image: require("./assets/images/harvardLogo.png"),
+      image: null,
       projectName: "Peru - School Volunteering",
       projectDesc: "One week in a school, using basic Spanish to educate the children on oral hygiene, and fundraising money to provide them all with toothbrushes and toothpaste.",
       footerLink: []
     },
     {
-      image: require("./assets/images/stanfordLogo.png"),
+      image: null,
       projectName: "Tanzania - One Month Placement",
       projectDesc: "One month volunteering placement, completing oral health promotion in a daycare centre, and fundraising over £500 to install soft flooring in the playground, repainting the building and a mural with the children's handprints, and providing each child with a named pencil case with school supplies as well as a toothbrush and small toothpaste. I also attended medical outreach, ensuring I remained within my scope of practice and current training, but providing oral health advice to those in the most rural populations.",
       footerLink: []
     },
     {
-      image: require("./assets/images/im_logo.jpg"),
+      image: null,
       projectName: "Ironman 70.3 - Charity Fundraising",
       projectDesc: "I raised over £1000 for Prostate Cancer UK and Crohns and Colitis UK - charities whose research and support has been key in my parents' health.",
       footerLink: []
@@ -266,49 +260,49 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "• Over 15 half marathons",
+      title: "Over 15 half marathons",
       subtitle: "",
       image: null,
       imageAlt: "",
       footerLink: []
     },
     {
-      title: "• 2 x 70.3 Ironman triathlons",
+      title: "2 x 70.3 Ironman triathlons",
       subtitle: "",
       image: null,
       imageAlt: "",
       footerLink: []
     },
     {
-      title: "• Paris Marathon 2025",
+      title: "Paris Marathon 2025",
       subtitle: "",
       image: null,
       imageAlt: "",
       footerLink: []
     },
     {
-      title: "• 375km bikepacking trip in Slovenia",
+      title: "375km bikepacking trip in Slovenia",
       subtitle: "",
       image: null,
       imageAlt: "",
       footerLink: []
     },
     {
-      title: "• 550km bike packing trip in France",
+      title: "550km bikepacking trip in France",
       subtitle: "",
       image: null,
       imageAlt: "",
       footerLink: []
     },
     {
-      title: "• 5 day Salkantay trek in Peru",
+      title: "5 day Salkantay trek in Peru",
       subtitle: "",
       image: null,
       imageAlt: "",
       footerLink: []
     },
     {
-      title: "• 3 day Mount Rinjani trek in Lombok, Indonesia",
+      title: "3 day Mount Rinjani trek in Lombok, Indonesia",
       subtitle: "",
       image: null,
       imageAlt: "",

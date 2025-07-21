@@ -39,12 +39,12 @@
 }
 
   .personal-image-container {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 6px solid $buttonColor;
+    border: none;
     
     .personal-image {
       width: 100%;
@@ -55,6 +55,30 @@
     
     &:hover .personal-image {
       transform: scale(1.05);
+    }
+  }
+
+  .follower-count {
+    text-align: center;
+    margin-top: 15px;
+    
+    .follower-text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: $buttonColor;
+      
+      .count {
+        font-size: 1.8em;
+        font-weight: 700;
+        display: block;
+      }
+      
+      .label {
+        font-size: 1em;
+        opacity: 0.8;
+        margin-top: 2px;
+        display: block;
+      }
     }
   }
 }
@@ -150,9 +174,25 @@
     }
     
     .personal-image-container {
-      width: 200px;
-      height: 200px;
+      width: 280px;
+      height: 280px;
       margin: 0 auto;
+    }
+    
+    .follower-count {
+      margin-top: 12px;
+      
+      .follower-text {
+        font-size: 1.1em;
+        
+        .count {
+          font-size: 1.5em;
+        }
+        
+        .label {
+          font-size: 0.9em;
+        }
+      }
     }
   }
 }
@@ -178,8 +218,24 @@
     }
     
     .personal-image-container {
-      width: 180px;
-      height: 180px;
+      width: 220px;
+      height: 220px;
+    }
+    
+    .follower-count {
+      margin-top: 10px;
+      
+      .follower-text {
+        font-size: 1em;
+        
+        .count {
+          font-size: 1.3em;
+        }
+        
+        .label {
+          font-size: 0.8em;
+        }
+      }
     }
   }
   

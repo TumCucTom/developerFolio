@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Gallery.scss';
-import GalleryCTAs from '../galleryCTAs/GalleryCTAs';
 
 const Gallery = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,8 +15,6 @@ const Gallery = ({ images }) => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
-
-
 
   return (
     <div className="gallery-container">
@@ -42,11 +39,6 @@ const Gallery = ({ images }) => {
         <button className="gallery-button next" onClick={nextSlide}>
           &#10095;
         </button>
-      </div>
-      
-
-      <div className="gallery-ctas">
-        <GalleryCTAs />
       </div>
     </div>
   );

@@ -14,6 +14,8 @@ import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
+import GalleryCTAs from "../components/galleryCTAs/GalleryCTAs";
+import PhotoCarousel from "../components/photoCarousel/PhotoCarousel";
 
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
@@ -49,6 +51,10 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
+            <GalleryCTAs />
+            <PhotoCarousel 
+              images={["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"]}
+            />
             <Skills />
             <StackProgress />
             <Education />
@@ -56,11 +62,16 @@ const Main = () => {
             <Travel />
             <Projects />
             <StartupProject />
-            <Gap />
-            <LogoCarousel />
+            <PhotoCarousel 
+              images={["7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp"]}
+            />
             <Achievement />
             <BrandDeals />
+            <LogoCarousel />
             <GroupTrips />
+            <PhotoCarousel 
+              images={["13.webp", "14.webp", "15.webp", "16.webp", "17.webp", "18.webp"]}
+            />
             <Profile />
             <Footer />
           </>

@@ -1,6 +1,7 @@
 .education-heading {
   font-size: 56px;
   font-weight: 400;
+  text-align: center;
 }
 
 .education-section {
@@ -19,13 +20,17 @@
 
 .education-card-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   padding-top: 20px;
 }
 
 @media (max-width: 1380px) {
   .education-card-container {
     padding-top: 0px;
+    gap: 25px;
   }
   .education-heading {
     font-size: 40px;
@@ -39,6 +44,8 @@
 @media (max-width: 768px) {
   .education-card-container {
     padding-top: 0px;
+    flex-direction: column;
+    gap: 20px;
   }
   .education-heading {
     font-size: 30px;
