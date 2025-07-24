@@ -63,13 +63,12 @@
 .header .logo-name {
   font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
   font-weight: 600;
-  font-size: 2.2em;
+  font-size: 1.8em;
   color: $buttonColor;
   padding: 0 10px;
   letter-spacing: 1px;
   text-shadow: 0 2px 4px rgba(155, 107, 158, 0.15);
   transition: all 0.3s ease;
-  font-style: italic;
   
   &:hover {
     color: $buttonHover;
@@ -194,7 +193,7 @@
 /* Mobile styles for header logo */
 @media (max-width: 767px) {
   .header .logo-name {
-    font-size: 1.6em;
+    font-size: 1.4em;
     letter-spacing: 0.5px;
     padding: 0 5px;
     white-space: nowrap;
@@ -207,7 +206,7 @@
 
 @media (max-width: 480px) {
   .header .logo-name {
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 0.3px;
     padding: 0 3px;
   }

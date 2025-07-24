@@ -87,7 +87,7 @@ export default function GroupTrips() {
                   </div>
                   <div className="trip-image-container">
                     <img
-                      src={require("../../assets/images/personal-images/4.webp")}
+                      src={require("../../assets/images/carousels/group-trips/IMG_6948.webp")}
                       alt="Costa Rica Trip"
                       className="trip-image"
                       loading="lazy"

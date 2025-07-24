@@ -36,21 +36,21 @@ export default function Travel() {
             <div className="side-photos left-photos">
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/1.webp")}
+                  src={require("../../assets/images/personal-images/19.webp")}
                   alt="Travel 1"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/2.webp")}
+                  src={require("../../assets/images/personal-images/24.webp")}
                   alt="Travel 2"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/3.webp")}
+                  src={require("../../assets/images/personal-images/23.webp")}
                   alt="Travel 3"
                   className="small-travel-photo"
                 />
@@ -70,21 +70,21 @@ export default function Travel() {
             <div className="side-photos right-photos">
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/7.webp")}
+                  src={require("../../assets/images/personal-images/21.webp")}
                   alt="Travel 7"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/8.webp")}
+                  src={require("../../assets/images/personal-images/16.webp")}
                   alt="Travel 8"
                   className="small-travel-photo"
                 />
               </div>
               <div className="small-photo-container">
                 <img
-                  src={require("../../assets/images/personal-images/9.webp")}
+                  src={require("../../assets/images/personal-images/13.webp")}
                   alt="Travel 9"
                   className="small-travel-photo"
                 />

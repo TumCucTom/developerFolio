@@ -53,7 +53,8 @@ const Main = () => {
             <Greeting />
             <GalleryCTAs />
             <PhotoCarousel 
-              images={["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"]}
+              images={["IMG_0109.webp", "IMG_7198.webp", "IMG_7204.webp", "IMG_8388.webp", "IMG_1661.webp", "68A5FD31-CA33-4958-BBDF-A52140DE7380.webp", "IMG_2610.webp", "IMG_6366.webp", "IMG_8455.webp", "IMG_3622.webp"]}
+              folder="carousels/about-me"
             />
             <Skills />
             <StackProgress />
@@ -62,16 +63,18 @@ const Main = () => {
             <Travel />
             <Projects />
             <StartupProject />
-            <PhotoCarousel 
-              images={["7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp"]}
-            />
+                               <PhotoCarousel
+                     images={["7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp"]}
+                     folder="personal-images"
+                   />
             <Achievement />
             <BrandDeals />
             <LogoCarousel />
             <GroupTrips />
-            <PhotoCarousel 
-              images={["13.webp", "14.webp", "15.webp", "16.webp", "17.webp", "18.webp"]}
-            />
+                               <PhotoCarousel
+                     images={["IMG_2281.webp", "IMG_7010.webp", "IMG_1492.webp", "IMG_6948.webp", "IMG_4994.webp", "IMG_7308.webp", "IMG_4249.webp", "IMG_4812.webp", "IMG_6884.webp", "IMG_4585.webp", "IMG_9130_jpg.webp", "IMG_8693.webp", "IMG_6607.webp", "b7b8d486-7d0f-4230-9d67-4bd4e123932b.webp", "IMG_1182.webp", "IMG_1200.webp", "IMG_0069.webp", "IMG_1566.webp"]}
+                     folder="carousels/group-trips"
+                   />
             <Profile />
             <Footer />
           </>

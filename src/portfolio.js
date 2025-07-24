@@ -142,14 +142,14 @@ const educationInfo = {
     },
     {
       schoolName: "International Baccalaureate",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/dartford_grammar.webp"),
       subHeader: "IB Diploma - 45 points",
       duration: "Completed",
       desc: "Achieved 45 points in the International Baccalaureate, equivalent to 5 A* at A level.",
     },
     {
       schoolName: "GCSE",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/dartford_grammar.webp"),
       subHeader: "GCSE Qualifications",
       duration: "Completed",
       descBullets: [

@@ -7,10 +7,20 @@ export default function LogoCarousel() {
   const {isDark} = useContext(StyleContext);
   
   const brands = [
-    "Runna", "Speedo", "Adidas", "Tala", "Puresport", "Sigma Sport",
-    "LUCA", "Nails Inc", "vilgain", "zone3", "saucony", "samuri", 
-    "shokz", "siroko", "ninja kitchen", "tala", "just giving", 
-    "ghanda clothing", "bodyform", "new balence", "shreddy"
+    { name: "LUCA", logo: "luca.jpeg" },
+    { name: "Nails Inc", logo: "nails.jpeg" },
+    { name: "Vilgain", logo: "vilgain.jpeg" },
+    { name: "Zone3", logo: "zone3.jpeg" },
+    { name: "Saucony", logo: "saucony.jpeg" },
+    { name: "Samurai", logo: "samueai.jpeg" },
+    { name: "Shokz", logo: "shokz.jpeg" },
+    { name: "Siroko", logo: "siroko.jpeg" },
+    { name: "Ninja Kitchen", logo: "ninja.jpg" },
+    { name: "Just Giving", logo: "justgiving.jpeg" },
+    { name: "Ghanda Clothing", logo: "ghanda.jpeg" },
+    { name: "Bodyform", logo: "bodyform.webp" },
+    { name: "New Balance", logo: "newbalence.jpeg" },
+    { name: "Shreddy", logo: "shreddy.jpeg" }
   ];
   
   // Duplicate the brands array to create seamless scrolling
@@ -24,7 +34,11 @@ export default function LogoCarousel() {
           <div className="carousel-track carousel-track-forward">
             {duplicatedBrands.map((brand, index) => (
               <div key={`forward-${index}`} className="carousel-item">
-                <span className="brand-text">{brand}</span>
+                <img
+                  src={require(`../../assets/images/brands/${brand.logo}`)}
+                  alt={`${brand.name} logo`}
+                  className="brand-logo-image"
+                />
               </div>
             ))}
           </div>
@@ -33,7 +47,11 @@ export default function LogoCarousel() {
           <div className="carousel-track carousel-track-reverse">
             {duplicatedBrands.map((brand, index) => (
               <div key={`reverse-${index}`} className="carousel-item">
-                <span className="brand-text">{brand}</span>
+                <img
+                  src={require(`../../assets/images/brands/${brand.logo}`)}
+                  alt={`${brand.name} logo`}
+                  className="brand-logo-image"
+                />
               </div>
             ))}
           </div>

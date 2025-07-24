@@ -56,12 +56,15 @@
 }
 
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   margin-bottom: 15px;
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  padding: 0.5rem;
+  background: white;
 }
 
 .education-card-right {
@@ -130,6 +133,7 @@
     width: 4rem;
     height: 4rem;
     margin-bottom: 10px;
+    padding: 0.4rem;
   }
 }
 
@@ -148,11 +152,7 @@
     width: 100%;
   }
   .education-roundedimg {
-    margin-top: 0;
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 0;
-    margin-right: 15px;
+    display: none;
   }
   .education-text-bullets > ul {
     max-width: 100%;

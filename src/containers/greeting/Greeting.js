@@ -13,7 +13,7 @@ export default function Greeting() {
         <div className="greeting-image-div">
           <div className="single-image-container">
             <img
-              src={require("../../assets/images/personal-images/20.webp")}
+              src={require("../../assets/images/personal-images/cover.webp")}
               alt="Holly Wilson"
               className="greeting-single-image"
             />

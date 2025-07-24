@@ -1,7 +1,7 @@
 import React from "react";
 import "./PhotoCarousel.scss";
 
-export default function PhotoCarousel({ images, title }) {
+export default function PhotoCarousel({ images, title, folder = "personal-images" }) {
   // Duplicate images for seamless scrolling
   const duplicatedImages = [...images, ...images];
   
@@ -16,7 +16,7 @@ export default function PhotoCarousel({ images, title }) {
         {duplicatedImages.map((image, index) => (
           <div key={`image-${index}`} className="carousel-item">
             <img
-              src={require(`../../assets/images/personal-images/${image}`)}
+              src={require(`../../assets/images/${folder}/${image}`)}
               alt={`Carousel image ${index + 1}`}
               className="carousel-image"
               loading="lazy"

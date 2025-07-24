@@ -7,12 +7,12 @@ export default function BrandDeals() {
   const {isDark} = useContext(StyleContext);
   
   const mainBrands = [
-    { name: "Runna", logo: null },
-    { name: "Speedo", logo: null },
-    { name: "Adidas", logo: null },
-    { name: "Tala", logo: null },
-    { name: "Puresport", logo: null },
-    { name: "Sigma Sport", logo: null }
+    { name: "Runna", logo: "runna.jpeg" },
+    { name: "Speedo", logo: "speedo.jpeg" },
+    { name: "Adidas", logo: "addidas.jpeg" },
+    { name: "Tala", logo: "tala.jpeg" },
+    { name: "Puresport", logo: "pureport.jpeg" },
+    { name: "Sigma Sport", logo: "sigmasports.jpeg" }
   ];
 
 
@@ -47,12 +47,12 @@ export default function BrandDeals() {
             <div className="main-brands-grid">
               {mainBrands.map((brand, i) => (
                 <div key={i} className="brand-box">
-                  <div className="brand-logo-container">
+                  <div className={`brand-logo-container ${brand.name.toLowerCase()}-brand`}>
                     {brand.logo ? (
                       <img
-                        src={require(`../../assets/images/${brand.logo}`)}
+                        src={require(`../../assets/images/brands/${brand.logo}`)}
                         alt={`${brand.name} logo`}
-                        className="brand-logo"
+                        className={`brand-logo ${brand.name.toLowerCase()}-logo`}
                       />
                     ) : (
                       <div className="brand-logo-placeholder">
