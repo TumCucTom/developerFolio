@@ -72,7 +72,7 @@ const Main = () => {
             <LogoCarousel />
             <GroupTrips />
                                <PhotoCarousel
-                     images={["IMG_2281.webp", "IMG_7010.webp", "IMG_1492.webp", "IMG_6948.webp", "IMG_4994.webp", "IMG_7308.webp", "IMG_4249.webp", "IMG_4812.webp", "IMG_6884.webp", "IMG_4585.webp", "IMG_9130_jpg.webp", "IMG_8693.webp", "IMG_6607.webp", "b7b8d486-7d0f-4230-9d67-4bd4e123932b.webp", "IMG_1182.webp", "IMG_1200.webp", "IMG_0069.webp", "IMG_1566.webp"]}
+                     images={["IMG_7010.webp", "IMG_1492.webp", "IMG_6948.webp", "IMG_4994.webp", "IMG_7308.webp", "IMG_4249.webp", "IMG_4812.webp", "IMG_6884.webp", "IMG_4585.webp", "IMG_9130_jpg.webp", "IMG_8693.webp", "IMG_6607.webp", "b7b8d486-7d0f-4230-9d67-4bd4e123932b.webp", "IMG_1182.webp", "IMG_1200.webp", "IMG_0069.webp", "IMG_1566.webp"]}
                      folder="carousels/group-trips"
                    />
             <Profile />
