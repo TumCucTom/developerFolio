@@ -3,7 +3,7 @@
 .brand-deals-main-div {
   width: 100%;
   text-align: center;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .brand-deals-heading {
@@ -149,6 +149,10 @@
 }
 
 @media (max-width: 768px) {
+  .brand-deals-main-div {
+    padding: 20px 0;
+  }
+  
   .brand-deals-heading {
     font-size: 40px;
   }
@@ -181,6 +185,10 @@
 }
 
 @media (max-width: 480px) {
+  .brand-deals-main-div {
+    padding: 10px 0;
+  }
+  
   .brand-deals-heading {
     font-size: 32px;
   }

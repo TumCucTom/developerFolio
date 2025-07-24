@@ -11,7 +11,7 @@ const InstagramFollower = () => {
     if (count >= 1000000) {
       return (count / 1000000).toFixed(1) + 'M';
     } else if (count >= 100000) {
-      return (count / 1000).toFixed(0) + 'k+';
+      return (count / 1000).toFixed(0) + 'k';
     } else if (count >= 1000) {
       return (count / 1000).toFixed(1) + 'k';
     }

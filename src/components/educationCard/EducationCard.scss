@@ -6,6 +6,7 @@
   align-items: center;
   text-align: center;
   width: 250px;
+  height: 360px;
   padding: 20px;
   background: $lightBackground2;
   border-radius: 10px;
@@ -110,6 +111,7 @@
 @media (max-width: 1380px) {
   .education-card {
     width: 220px;
+    height: 340px;
     padding: 15px;
   }
   .education-card-right {
@@ -140,16 +142,20 @@
 @media (max-width: 768px) {
   .education-card {
     width: 100%;
+    height: auto;
     text-align: center;
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
+    padding: 10px;
+    margin-bottom: 2px;
   }
   .education-card-right {
     width: 100%;
   }
   .education-card-border {
     width: 100%;
+    margin-bottom: 5px;
   }
   .education-roundedimg {
     display: none;

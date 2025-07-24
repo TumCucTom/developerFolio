@@ -23,8 +23,14 @@ export default function LogoCarousel() {
     { name: "Shreddy", logo: "shreddy.jpeg" }
   ];
   
-  // Duplicate the brands array to create seamless scrolling
-  const duplicatedBrands = [...brands, ...brands];
+  // Split brands into two halves for top and bottom rows
+  const halfLength = Math.ceil(brands.length / 2);
+  const topBrands = brands.slice(0, halfLength);
+  const bottomBrands = brands.slice(halfLength);
+  
+  // Duplicate each half to create seamless scrolling
+  const duplicatedTopBrands = [...topBrands, ...topBrands];
+  const duplicatedBottomBrands = [...bottomBrands, ...bottomBrands];
   
   return (
     <Fade bottom duration={1000} distance="20px">
@@ -32,7 +38,7 @@ export default function LogoCarousel() {
         <div className="carousel-container">
           {/* First row - left to right */}
           <div className="carousel-track carousel-track-forward">
-            {duplicatedBrands.map((brand, index) => (
+            {duplicatedTopBrands.map((brand, index) => (
               <div key={`forward-${index}`} className="carousel-item">
                 <img
                   src={require(`../../assets/images/brands/${brand.logo}`)}
@@ -45,7 +51,7 @@ export default function LogoCarousel() {
           
           {/* Second row - right to left */}
           <div className="carousel-track carousel-track-reverse">
-            {duplicatedBrands.map((brand, index) => (
+            {duplicatedBottomBrands.map((brand, index) => (
               <div key={`reverse-${index}`} className="carousel-item">
                 <img
                   src={require(`../../assets/images/brands/${brand.logo}`)}
