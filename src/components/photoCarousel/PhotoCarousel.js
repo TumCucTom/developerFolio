@@ -2,8 +2,9 @@ import React from "react";
 import "./PhotoCarousel.scss";
 
 export default function PhotoCarousel({ images, title, folder = "personal-images" }) {
-  // Duplicate images for seamless scrolling
-  const duplicatedImages = [...images, ...images];
+  // Shuffle images and then duplicate for seamless scrolling
+  const shuffledImages = [...images].sort(() => Math.random() - 0.5);
+  const duplicatedImages = [...shuffledImages, ...shuffledImages];
   
   return (
     <div className="photo-carousel-container">

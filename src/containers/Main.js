@@ -64,7 +64,7 @@ const Main = () => {
             <Projects />
             <StartupProject />
                                <PhotoCarousel
-                     images={["7.webp", "8.webp", "9.webp", "10.webp", "11.webp", "12.webp"]}
+                     images={["9.webp", "10.webp", "11.webp", "12.webp", "16.webp", "23.webp"]}
                      folder="personal-images"
                    />
             <Achievement />
