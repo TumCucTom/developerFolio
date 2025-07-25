@@ -27,11 +27,15 @@
   }
 }
 
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .carousel-track {
   display: flex;
-  white-space: nowrap;
-  width: max-content;
-  animation: scrollPhotos 15s linear infinite;
+  width: calc(var(--total-images) * 230px);
+  animation: infiniteScroll 20s linear infinite;
 }
 
 .carousel-item {
@@ -40,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 230px;
+  width: 230px;
 }
 
 .carousel-image {
@@ -56,12 +60,12 @@
   }
 }
 
-@keyframes scrollPhotos {
+@keyframes infiniteScroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-1 * var(--image-count) * 230px));
   }
 }
 
@@ -76,9 +80,14 @@
     padding: 15px 0;
   }
   
+  .carousel-track {
+    width: calc(var(--total-images) * 180px);
+    animation: infiniteScrollTablet 20s linear infinite;
+  }
+  
   .carousel-item {
     padding: 0 10px;
-    min-width: 180px;
+    width: 180px;
   }
   
   .carousel-image {
@@ -89,6 +98,15 @@
   .carousel-title h3 {
     font-size: 1.1em;
   }
+  
+  @keyframes infiniteScrollTablet {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-1 * var(--image-count) * 180px));
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -96,9 +114,14 @@
     padding: 12px 0;
   }
   
+  .carousel-track {
+    width: calc(var(--total-images) * 140px);
+    animation: infiniteScrollMobile 20s linear infinite;
+  }
+  
   .carousel-item {
     padding: 0 8px;
-    min-width: 140px;
+    width: 140px;
   }
   
   .carousel-image {
@@ -108,5 +131,14 @@
   
   .carousel-title h3 {
     font-size: 1em;
+  }
+  
+  @keyframes infiniteScrollMobile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-1 * var(--image-count) * 140px));
+    }
   }
 } 

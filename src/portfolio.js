@@ -55,7 +55,7 @@ const skillsSection = {
   title: "About Me",
   subTitle: "DENTAL STUDENT, ATHLETE, TRAVELER & ENTREPRENEUR",
   description: [
-    "Hi, my name is Holly Wilson, and I'm a Dental student, currently intercalating in BSc Functional and Clinical Anatomy. However, I have a passion to pursue multiple dreams simultaneously. Alongside excelling in dental school (achieving the highest achiever in Health Sciences in Year 1, and an average of 80.5% in my end of year exams to date), I have also trained for Ironman triathlons & marathons, travelled over 30 countries independently, and have successfully begun my own business- 'HappyHealthyHols'.",
+    "Hi, my name is Holly Wilson, and I'm a Dental student, currently intercalating in BSc Functional and Clinical Anatomy. However, I have a passion to pursue multiple dreams simultaneously. Alongside excelling in dental school (receiving the Alumni Highest Achiever Award, and an average of 80.5% in my end of year exams to date), I have also trained for Ironman triathlons & marathons, travelled over 30 countries independently, and have successfully begun my own business- 'HappyHealthyHols'.",
     "With a combined following of over 110,000, my social media pages aim to bring smiles (in a different way to dentistry!) to a global audience of millions monthly, across Instagram, TikTok, and YouTube, inspiring others who are also in full time education/ employment to maximise their free time and annual leave- working to LIVE rather than living to work. My personal brand involves working with huge companies on social media in marketing, such as Adidas and Speedo, and also hosting group trips for up to 32 individuals, bringing together likeminded people through the experience of exploring new countries/trying a new challenge. I also use the platforms to raise money for charities when I compete in sporting events, and to educate others on the risks of oral health deterioration in endurance sports- a topic I would love to investigate further in the future."
   ],
 
@@ -135,9 +135,9 @@ const educationInfo = {
     {
       schoolName: "University of Bristol",
       logo: require("./assets/images/uob_new_logo.png"),
-      subHeader: "BSc Dentistry",
+      subHeader: "BSc Functional and Clinical Anatomy",
       duration: "Current",
-      desc: "Currently studying BSc Dentistry at the University of Bristol.",
+      desc: "Currently studying BSc Functional and Clinical Anatomy at the University of Bristol.",
       descBullets: []
     },
     {
@@ -145,14 +145,14 @@ const educationInfo = {
       logo: require("./assets/images/dartford_grammar.webp"),
       subHeader: "IB Diploma - 45 points",
       duration: "Completed",
-      desc: "Achieved 45 points in the International Baccalaureate, equivalent to 5 A* at A level. IB Higher level - biology, chemistry, psychology, Standard level- maths, English, French.",
+      desc: "Achieved 45 points in the International Baccalaureate, equivalent to 5 A* at A level. IB Higher level - Biology, Chemistry, Psychology, Standard level- Maths, English, French.",
     },
     {
       schoolName: "GCSE",
       logo: require("./assets/images/dartford_grammar.webp"),
       subHeader: "GCSE Qualifications",
       duration: "Completed",
-      desc: "Achieved 6 x Grade 9's (A**) and 4 x Grade 8's (A*)."
+      desc: "Achieved 6 x Grade 9's (A**) and 4 x Grade 8's (A*), plus A* Further Maths."
     }
   ]
 };
@@ -184,18 +184,14 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Dental Student",
       company: "St George's Hospital, London",
       companylogo: require("./assets/images/harvardLogo.png"),
-      date: "Current",
       desc: "Experience on both maxillofacial and orthodontic departments in a busy London hospital, learning the importance of multidisciplinary approaches to complex treatment plans and gaining a valuable insight into a dental career in hospital.",
       descBullets: []
     },
     {
-      role: "Dental Assistant",
       company: "The Sandford Dental Clinic",
       companylogo: require("./assets/images/stanfordLogo.png"),
-      date: "Current",
       desc: "Understanding how both private and general dental practices run through a week of shadowing.",
       descBullets: []
     }
@@ -243,7 +239,7 @@ const bigProjects = {
 const achievementSection = {
   title: "PERSONAL BRAND",
   subtitle:
-    "I have always been active, growing up swimming, playing tennis, hockey, and trying everything from taekwondo to horse riding. Whilst travelling I found my love for running as a method of exploring new cities, and cycling (bike packing) as a great way to see countries at a slower pace (and much cheaper!) rate. I have documented my whole journey from weight gain following an eating disorder, to where I am today! Some of the crazy cool challenges I've documented are:",
+    "I have always been active, growing up swimming, playing tennis, hockey, and trying everything from taekwondo to horse riding. Whilst travelling I found my love for running as a method of exploring new cities, and cycling (bike packing) as a great way to see countries at a slower pace (and much cheaper rate!) I have documented my whole journey from weight gain following an eating disorder, to where I am today! Some of the crazy cool challenges I've documented are:",
 
   achievementsCards: [
     {
