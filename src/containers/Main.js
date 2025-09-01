@@ -53,7 +53,7 @@ const Main = () => {
             <Greeting />
             <GalleryCTAs />
             <PhotoCarousel 
-              images={["IMG_0109.webp", "IMG_7198.webp", "IMG_7204.webp", "IMG_8388.webp", "IMG_1661.webp", "68A5FD31-CA33-4958-BBDF-A52140DE7380.webp", "IMG_2610.webp", "IMG_6366.webp", "IMG_8455.webp", "IMG_3622.webp", "IMG_0026.jpeg", "IMG_7056.jpg", "IMG_8651.jpg", "IMG_8851_jpg.jpeg"]}
+              images={["IMG_0109.webp", "IMG_7198.webp", "IMG_7204.webp", "IMG_8388.webp", "IMG_1661.webp", "68A5FD31-CA33-4958-BBDF-A52140DE7380.webp", "IMG_2610.webp", "IMG_6366.webp", "IMG_8455.webp", "IMG_3622.webp", "IMG_0026.webp", "IMG_7056.webp", "IMG_8651.webp", "IMG_8851_jpg.webp"]}
               folder="carousels/about-me"
               speed={33.33}
             />
