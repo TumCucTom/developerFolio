@@ -69,10 +69,7 @@
   }
 }
 
-/* Pause animation on hover */
-.photo-carousel-container:hover .carousel-track {
-  animation-play-state: paused;
-}
+
 
 /* Responsive design */
 @media (max-width: 768px) {

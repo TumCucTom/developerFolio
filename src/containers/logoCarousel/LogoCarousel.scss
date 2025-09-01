@@ -86,11 +86,7 @@
   }
 }
 
-/* Pause animation on hover */
-.carousel-container:hover .logo-carousel-track-forward,
-.carousel-container:hover .logo-carousel-track-reverse {
-  animation-play-state: paused;
-}
+
 
 /* Dark mode styles */
 .dark-mode {
