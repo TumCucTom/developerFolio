@@ -14,8 +14,8 @@ export default function Achievement() {
         <div className="achievement-container">
           <div className="achievement-side-image left-image">
             <img
-              src={require("../../assets/images/personal-images/5.webp")}
-              alt="Holly Wilson - Achievement"
+              src={require("../../assets/images/ironman.jpeg")}
+              alt="Holly Wilson - Ironman"
               className="achievement-image"
             />
           </div>

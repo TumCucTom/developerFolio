@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./PhotoCarousel.scss";
 
-export default function PhotoCarousel({ images, title, folder = "personal-images" }) {
+export default function PhotoCarousel({ images, title, folder = "personal-images", speed = 20 }) {
   const trackRef = useRef(null);
   
   // Create enough duplicates for seamless scrolling
@@ -22,7 +22,8 @@ export default function PhotoCarousel({ images, title, folder = "personal-images
           className="carousel-track"
           style={{
             '--image-count': shuffledImages.length,
-            '--total-images': extendedImages.length
+            '--total-images': extendedImages.length,
+            '--animation-duration': `${speed}s`
           }}
         >
           {extendedImages.map((image, index) => (

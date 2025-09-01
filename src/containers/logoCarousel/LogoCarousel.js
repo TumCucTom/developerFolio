@@ -20,7 +20,9 @@ export default function LogoCarousel() {
     { name: "Ghanda Clothing", logo: "ghanda.jpeg" },
     { name: "Bodyform", logo: "bodyform.webp" },
     { name: "New Balance", logo: "newbalence.jpeg" },
-    { name: "Shreddy", logo: "shreddy.jpeg" }
+    { name: "Shreddy", logo: "shreddy.jpeg" },
+    { name: "Sigma Sports", logo: "sigmasports.jpeg" },
+    { name: "Form", logo: "form.jpg" }
   ];
   
   // Split brands into two halves for top and bottom rows
@@ -37,7 +39,7 @@ export default function LogoCarousel() {
       <div className={isDark ? "dark-mode main" : "main"} id="logo-carousel">
         <div className="carousel-container">
           {/* First row - left to right */}
-          <div className="carousel-track carousel-track-forward">
+          <div className="logo-carousel-track logo-carousel-track-forward">
             {duplicatedTopBrands.map((brand, index) => (
               <div key={`forward-${index}`} className="carousel-item">
                 <img
@@ -50,7 +52,7 @@ export default function LogoCarousel() {
           </div>
           
           {/* Second row - right to left */}
-          <div className="carousel-track carousel-track-reverse">
+          <div className="logo-carousel-track logo-carousel-track-reverse">
             {duplicatedBottomBrands.map((brand, index) => (
               <div key={`reverse-${index}`} className="carousel-item">
                 <img

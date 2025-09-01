@@ -2,8 +2,8 @@ import React from "react";
 import "./InstagramFollower.scss";
 
 const InstagramFollower = () => {
-  // Hard coded to display 100k+ immediately
-  const followerCount = 110000;
+  // Hard coded to display 115k+ immediately
+  const followerCount = 115000;
   const isLoading = false;
 
   // Function to format follower count with k/m suffixes

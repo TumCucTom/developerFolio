@@ -12,7 +12,7 @@ export default function BrandDeals() {
     { name: "Adidas", logo: "addidas.jpeg" },
     { name: "Tala", logo: "tala.jpeg" },
     { name: "Puresport", logo: "pureport.jpeg" },
-    { name: "Sigma Sport", logo: "sigmasports.jpeg" }
+    { name: "Skoda", logo: "skoda.png" }
   ];
 
 

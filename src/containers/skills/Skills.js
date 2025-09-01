@@ -22,7 +22,7 @@ export default function Skills() {
               </div>
               <div className="follower-count">
                 <div className="follower-text">
-                  <div className="count">100k+</div>
+                  <div className="count">115k+</div>
                   <div className="label">Following</div>
                 </div>
               </div>

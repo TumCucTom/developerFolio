@@ -18,6 +18,14 @@
   margin-bottom: 30px;
 }
 
+.education-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
 .education-card-container {
   display: flex;
   flex-direction: row;
@@ -25,6 +33,18 @@
   justify-content: center;
   gap: 30px;
   padding-top: 20px;
+  flex: 1;
+}
+
+.education-image-container {
+  display: none;
+}
+
+.education-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1380px) {
@@ -42,16 +62,37 @@
 }
 
 @media (max-width: 768px) {
+  .education-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
   .education-card-container {
     padding-top: 0px;
     flex-direction: column;
     gap: 5px;
   }
+  
   .education-heading {
     font-size: 30px;
     text-align: center;
   }
+  
   .education-text-subtitle {
     font-size: 16px;
+  }
+  
+  .education-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    padding: 5px 0;
+    width: 100%;
+  }
+  
+  .education-image {
+    max-width: 200px;
+    margin: 0 auto;
   }
 }

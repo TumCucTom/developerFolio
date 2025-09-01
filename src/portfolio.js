@@ -55,8 +55,8 @@ const skillsSection = {
   title: "About Me",
   subTitle: "DENTAL STUDENT, ATHLETE, TRAVELER & ENTREPRENEUR",
   description: [
-    "Hi, my name is Holly Wilson, and I'm a Dental student, currently intercalating in BSc Functional and Clinical Anatomy. However, I have a passion to pursue multiple dreams simultaneously. Alongside excelling in dental school (receiving the Alumni Highest Achiever Award, and an average of 80.5% in my end of year exams to date), I have also trained for Ironman triathlons & marathons, travelled over 30 countries independently, and have successfully begun my own business- 'HappyHealthyHols'.",
-    "With a combined following of over 110,000, my social media pages aim to bring smiles (in a different way to dentistry!) to a global audience of millions monthly, across Instagram, TikTok, and YouTube, inspiring others who are also in full time education/ employment to maximise their free time and annual leave- working to LIVE rather than living to work. My personal brand involves working with huge companies on social media in marketing, such as Adidas and Speedo, and also hosting group trips for up to 32 individuals, bringing together likeminded people through the experience of exploring new countries/trying a new challenge. I also use the platforms to raise money for charities when I compete in sporting events, and to educate others on the risks of oral health deterioration in endurance sports- a topic I would love to investigate further in the future."
+    "Hi, my name is Holly Wilson, and I'm a Dental student, currently intercalating in BSc Functional and Clinical Anatomy. However, I have a passion to pursue multiple dreams simultaneously. Alongside excelling in dental school (receiving the Alumni Highest Achiever Award, and an average of 80.5% in my end of year exams to date), I have also trained for Ironman triathlons & marathons, travelled to over 35 countries independently, and have successfully begun my own business- 'HappyHealthyHols'.",
+    "With a combined following of over 115,000, my social media pages aim to bring smiles (in a different way to dentistry!) to a global audience of millions monthly, across Instagram, TikTok, and YouTube, inspiring others who are also in full time education/ employment to maximise their free time and annual leave- working to LIVE rather than living to work. My personal brand involves working with huge companies on social media in marketing, such as Adidas and Speedo, and also hosting group trips for up to 32 individuals, bringing together likeminded people through the experience of exploring new countries/trying a new challenge. I also use the platforms to raise money for charities when I compete in sporting events, and to educate others on the risks of oral health deterioration in endurance sports- a topic I would love to investigate further in the future."
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -243,7 +243,14 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Over 15 half marathons",
+      title: "Ironman Tallinn 2025 (3.8km swim, 180km bike, marathon run)",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
+    },
+    {
+      title: "3 day Mount Rinjani trek in Lombok, Indonesia",
       subtitle: "",
       image: null,
       imageAlt: "",
@@ -285,7 +292,14 @@ const achievementSection = {
       footerLink: []
     },
     {
-      title: "3 day Mount Rinjani trek in Lombok, Indonesia",
+      title: "Over 15 half marathons",
+      subtitle: "",
+      image: null,
+      imageAlt: "",
+      footerLink: []
+    },
+    {
+      title: "Bikepacking 525km Kent",
       subtitle: "",
       image: null,
       imageAlt: "",
